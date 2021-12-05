@@ -45,11 +45,11 @@ function Home() {
               by Max Klein
             </a>
           </div>
-          <div class="flex flex-row pt-12 bg-yellow">
-            <div class="w-80 h-80">
+          <div class="flex flex-col ds:flex-row pt-12 ">
+            <div class="ds:w-2/4 w-1">
               <div>
                 <img
-                  id="background"
+                  id="backgrounds"
                   src="../alpaca/backgrounds/blue50.png"
                   alt="background"
                   className="absolute w-80 h-80 z-0"
@@ -120,7 +120,7 @@ function Home() {
                 />
               </div>
             </div>
-            <div class="pl-80 text-white bg-black">
+            <div class="text-white ds:w-2/4 w-1">
               <div>
                 <p>Accessorize the Alpaca's</p>
                 <div class="">
@@ -191,7 +191,7 @@ function Home() {
                 </div>
               </div>
               <div class="">
-                <div class="min-h-screen w-full bg-gray">
+                <div class="min-h-screen w-full">
                   <p class="mt-8">Style</p>
                   {stylesDict &&
                     stylesDict[selectedCategory].map((style) => {
