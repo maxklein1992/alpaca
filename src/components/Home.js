@@ -8,7 +8,6 @@ function Home() {
     "ears",
     "neck",
     "hair",
-    "nose",
     "mouth",
     "eyes",
     "accessories",
@@ -124,7 +123,20 @@ function Home() {
               <div>
                 <p>Accessorize the Alpaca's</p>
                 <div class="">
-                  <button
+                  {categories.map((style) => {
+                    return (
+                      <button
+                        onClick={() => {
+                          changeCategory(style);
+                        }}
+                        className="mt-6 mr-4 bg-yellow py-3 px-6 text-white rounded-lg hover:bg-white hover:text-yellow border-4 border-solid border-yellow"
+                      >
+                        {style.charAt(0).toUpperCase() + style.slice(1)}
+                      </button>
+                    );
+                  })}
+
+                  {/*<button
                     onClick={() => {
                       changeCategory("hair");
                     }}
@@ -187,7 +199,7 @@ function Home() {
                     className="mt-6 mr-4 bg-yellow py-3 px-6 text-white rounded-lg hover:bg-white hover:text-yellow border-4 border-solid border-yellow"
                   >
                     Background
-                  </button>
+                  </button>*/}
                 </div>
               </div>
               <div class="">
