@@ -22,34 +22,7 @@ function Home() {
   }
 
   function changeLayout(type, image) {
-    switch (type) {
-      case "backgrounds":
-        document.getElementById("background").src = image;
-        break;
-      case "neck":
-        document.getElementById("neck").src = image;
-        break;
-      case "hair":
-        document.getElementById("hair").src = image;
-        break;
-      case "eyes":
-        document.getElementById("eyes").src = image;
-        break;
-      case "mouth":
-        document.getElementById("mouth").src = image;
-        break;
-      case "leg":
-        document.getElementById("leg").src = image;
-        break;
-      case "accessories":
-        document.getElementById("accessories").src = image;
-        break;
-      case "ears":
-        document.getElementById("ears").src = image;
-        break;
-      default:
-        break;
-    }
+    document.getElementById(type).src = image;
   }
 
   return (
@@ -72,7 +45,7 @@ function Home() {
               by Max Klein
             </a>
           </div>
-          <div class="flex flex-row pt-12">
+          <div class="flex flex-row pt-12 bg-yellow">
             <div class="w-80 h-80">
               <div>
                 <img
@@ -147,7 +120,7 @@ function Home() {
                 />
               </div>
             </div>
-            <div class="pl-80 text-white">
+            <div class="pl-80 text-white bg-black">
               <div>
                 <p>Accessorize the Alpaca's</p>
                 <div class="">
@@ -211,9 +184,7 @@ function Home() {
                     onClick={() => {
                       changeCategory("backgrounds");
                     }}
-                    className="mt-6 mr-4 bg-yellow py-3 px-6 text-white
-                    rounded-lg hover:bg-white hover:text-yellow border-4
-                    border-solid border-yellow"
+                    className="mt-6 mr-4 bg-yellow py-3 px-6 text-white rounded-lg hover:bg-white hover:text-yellow border-4 border-solid border-yellow"
                   >
                     Background
                   </button>
