@@ -217,12 +217,12 @@ export const stylesDict = {
     },
     {
       name: "Till Backward",
-      image: `/alpaca/leg/till-backward.png`,
+      image: `/alpaca/leg/tilt-backward.png`,
       type: "leg",
     },
     {
       name: "Till Forward",
-      image: `/alpaca/leg/till-forward.png`,
+      image: `/alpaca/leg/tilt-forward.png`,
       type: "leg",
     },
   ],
